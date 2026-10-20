@@ -153,16 +153,14 @@ These values are safe to publish; the security rules are what protect the data.
 
 ### 6. Put it on GitHub Pages
 
-1. Create a **public** repository on GitHub, e.g. `workout-crew`.
-   (Pages is free for public repos. The repo doesn't contain any passwords or the invite code.)
-2. Upload all these files to it (drag-and-drop in the GitHub web UI works fine),
-   keeping the folder structure.
-3. Repo **Settings → Pages** → Source: **Deploy from a branch** → Branch: `main`, folder `/ (root)` → **Save**.
-4. After a minute the site is live at `https://YOUR-USERNAME.github.io/workout-crew/`.
+1. Push this repo to GitHub (`SonnyM13/Brothers-In-Arms`). It doesn't contain any passwords or the invite code.
+2. In Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**, pick the repo.
+   Framework preset **None**, no build command, no output directory, production branch `main`.
+3. The site is live at `https://bros-in-arms.pages.dev/` and redeploys on every push to `main`.
 
 ### 7. Tell Firebase about your site
 
-**Authentication → Settings → Authorized domains → Add domain** → `YOUR-USERNAME.github.io`
+**Authentication → Settings → Authorized domains → Add domain** → `bros-in-arms.pages.dev`
 
 ### 8. Add to iPhone home screen
 
