@@ -1,6 +1,6 @@
 {
   "name": "Brothers In Arms",
-  "short_name": "Grind",
+  "short_name": "Brothers In Arms",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
